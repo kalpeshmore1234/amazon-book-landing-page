@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    font-family: "Poppins", sans-serif;
+    background: #99FFFF;
+    color: #222;
+   height: 100%;
+}
+
+.booklist{
+    width: 90vw;
+    max-width:1170px;
+    margin: 4.4rem auto;
+    display: grid;
+    gap: 2rem;
+}
+
+.book{
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+    border: 1px solid #00308F;
+    opacity:0;
+    transition: opacity 5s ease, transform 0.3s ease;
+}
+
+.fade-in {
+    opacity: 1; /* Fade to visible */
+}
+
+.book:hover{
+    transform: scale(1.05);
+}
+
+@media screen and (min-width:668px){
+    .booklist{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width:1000px){
+    .booklist{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.book img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.book h2{
+    margin-top: 1rem;
+    font-size: 1.6rem;
+}
+
+.book h4{
+   color: #617d98;
+   font-size: 1rem;
+   margin-top: 0.50em;
+  
+}
+
+.number{
+    position: absolute;
+    top:0;
+    left:0;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: #00308F;
+    color:white;
+}
+
+h1{
+    margin-top: 4rem;
+    text-align: center;
+    color: #00308F;
+}
